@@ -6,7 +6,7 @@ To be able to configure a custom domain and use SSL paste the following code in 
 ```
 module.exports = {
   devServer: {
-    allowedHosts: 'yourdomain.com',                 // Allow all hosts
+    allowedHosts: 'yourdomain.com',      // Allow all hosts
     https: true,                         // Enable HTTPS if needed
   }
 }
