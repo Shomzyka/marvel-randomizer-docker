@@ -1,0 +1,9 @@
+services:
+  marvel-app:
+    image: ghcr.io/shomzyka/marvel-randomizer:latest
+    container_name: marvel-app
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    volumes:
+      - ./vue.config.js:/app/vue.config.js #to enable custom domain instead of IP:PORT
